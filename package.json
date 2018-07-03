@@ -1,0 +1,42 @@
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "description": "Your sample OS project",
+  "main": "build/project-name.min.js",
+  "files": [
+    "build/project-name.min.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build",
+    "test": "mocha 'test/unit/*.spec.js'",
+    "prepublishOnly": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "reify": "^0.15.1",
+    "rollup": "^0.58.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazzkiq/open-source-starter-kit.git"
+  },
+  "keywords": [
+    "sample",
+    "etc"
+  ],
+  "author": "Claudio Holanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazzkiq/open-source-starter-kit.git"
+  },
+  "homepage": "https://github.com/kazzkiq/open-source-starter-kit"
+}
