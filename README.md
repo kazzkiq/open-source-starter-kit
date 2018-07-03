@@ -34,9 +34,9 @@ To run local tests:
 npm test
 ```
 
-### Tool Used
+### Tools Used
 
-This project uses Rollup as module bundler, Buble for simple basic ES6+ to ES5 transpiling, Mocha and Chai for testing and Uglify for code compression.
+This project uses [Rollup](https://github.com/rollup/rollup) as module bundler, [Buble](https://github.com/Rich-Harris/buble) for simple basic ES6+ to ES5 transpiling, [Mocha](https://github.com/mochajs/mocha) and [Chai](https://github.com/chaijs/chai) for testing and [Uglify](https://github.com/mishoo/UglifyJS2) for code compression.
 
 ### Publising to npm
 
