@@ -34,6 +34,10 @@ To run local tests:
 npm test
 ```
 
+### Tool Used
+
+This project uses Rollup as module bundler, Buble for simple basic ES6+ to ES5 transpiling, Mocha and Chai for testing and Uglify for code compression.
+
 ### Publising to npm
 
 In order to publish a package, you can run:
