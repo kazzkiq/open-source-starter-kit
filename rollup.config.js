@@ -11,7 +11,7 @@ export default {
 		{
 			sourcemap: false,
 			format: 'umd',
-			name: 'sample-name',
+			name: 'ProjectName',
 			file: 'build/index.min.js'
 		}
 	],
