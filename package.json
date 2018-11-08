@@ -2,9 +2,9 @@
   "name": "project-name",
   "version": "0.1.0",
   "description": "Your sample OS project",
-  "main": "build/project-name.min.js",
+  "main": "build/index.min.js",
   "files": [
-    "build/project-name.min.js",
+    "build/index.min.js",
     "README.md",
     "LICENSE"
   ],

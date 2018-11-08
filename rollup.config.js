@@ -11,8 +11,8 @@ export default {
 		{
 			sourcemap: false,
 			format: 'umd',
-			name: 'UnoAB',
-			file: 'build/unocode-ab.min.js'
+			name: 'sample-name',
+			file: 'build/index.min.js'
 		}
 	],
 	plugins: [
