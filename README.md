@@ -36,7 +36,7 @@ npm test
 
 ### Tools Used
 
-This project uses [Rollup](https://github.com/rollup/rollup) as module bundler, [Buble](https://github.com/Rich-Harris/buble) for simple basic ES6+ to ES5 transpiling, [Mocha](https://github.com/mochajs/mocha) and [Chai](https://github.com/chaijs/chai) for testing and [Uglify](https://github.com/mishoo/UglifyJS2) for code compression.
+This project uses [Rollup](https://github.com/rollup/rollup) as module bundler, [Sirv](https://github.com/lukeed/sirv) for web server, [Buble](https://github.com/Rich-Harris/buble) for simple basic ES6+ to ES5 transpiling, [Mocha](https://github.com/mochajs/mocha) and [Chai](https://github.com/chaijs/chai) for testing and [Terser](https://github.com/terser-js/terser) for code compression.
 
 ### Publising to npm
 
