@@ -1,7 +1,9 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
-import { terser } from "rollup-plugin-terser";
+import { terser } from 'rollup-plugin-terser';
+import livereload from 'rollup-plugin-livereload';
+import filesize from 'rollup-plugin-filesize';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -22,7 +24,11 @@ export default {
 		// consult the documentation for details:
 		// https://github.com/rollup/rollup-plugin-commonjs
 		resolve(),
-		commonjs(),
+    commonjs(),
+
+    filesize(),
+    
+    !production && livereload('build'),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), transpile and minify
