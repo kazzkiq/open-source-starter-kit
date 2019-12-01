@@ -1,14 +1,8 @@
-/*
- * Use this file to write your library.
- * Feel free to create other files in /src as needed
- * but remember this file is the entrypoint.
- *
- * If you want to change the entrypoint, do so at
- * rollup.config.js.
- */
+import * as JSZip from 'jszip';
 
 export default class ProjectName {
   constructor() {
+    console.log(JSZip);
     document.write(`
       <h1>Hello from your main.js!</h1>
     `);

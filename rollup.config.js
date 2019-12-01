@@ -4,6 +4,8 @@ import buble from 'rollup-plugin-buble';
 import { terser } from 'rollup-plugin-terser';
 import livereload from 'rollup-plugin-livereload';
 import filesize from 'rollup-plugin-filesize';
+import builtins from 'rollup-plugin-node-builtins';
+import globals from 'rollup-plugin-node-globals';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -18,6 +20,8 @@ export default {
 		}
 	],
 	plugins: [
+    globals(),
+    builtins(),
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
 		// some cases you'll need additional configuration —
